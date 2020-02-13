@@ -4,18 +4,21 @@
 \alias{plotcp}
 \title{Illustration of Cohesion policy funds}
 \usage{
-plotcp(x, y)
+plotcp(data, aes_string)
 }
 \arguments{
-\item{x}{is a character vector}
+\item{data}{is a data.frame}
 
-\item{y}{is a numeric vector}
+\item{aes_string}{are the mapping coordinates}
+}
+\value{
+a ggplot2 object
 }
 \description{
-it creates a horizontal graph representing the total funds
+it creates a horizontal lollipop chart representing the total funds
 }
 \details{
-Creates a plot of total funds by country
+Creates a lollipop chart of total funds by country
 }
 \author{
 Anna Olena Zhab'yak

@@ -1,20 +1,27 @@
 #'Illustration of Cohesion policy funds
 #'
-#'Creates a plot of total funds by country
+#'Creates a lollipop chart of total funds by country
 #'
-#' @param x is a character vector
-#' @param y is a numeric vector
-#'
+#'@param data is a data.frame
+#' @param aes_string are the mapping coordinates
 #'@name plotcp
-#'@description it creates a horizontal graph representing the total funds
+#'@description it creates a horizontal lollipop chart representing the total funds
 #'@author Anna Olena Zhab'yak
+#'@return a ggplot2 object
+#'@importFrom stats predict qnorm
 #'@export
-plotcp <- function(x,y)
-  { ggplot2::ggplot(data= df3, ggplot2::aes(x= df3[,1], y= df3[,2])) +
-    ggplot2::geom_segment(ggplot2::aes(x=df3[,1], xend= df3[,2], y=0, yend=df3[,2]), color="skyblue") +
-    ggplot2::geom_point(color="blue", size=4, alpha=0.6) +
-    ggplot2::theme_light() +
-    ggplot2::coord_flip() +
-    ggplot2::theme(panel.grid.major.y = ggplot2::element_blank(), panel.border = ggplot2::element_blank(), axis.ticks.y = ggplot2::element_blank()
-    )}
-utils::globalVariables(c("df3"))
+ plotcp = function(data, aes_string) {
+   plottino <- ggplot2::ggplot(data = cpf::df3, mapping = ggplot2::aes(x = cpf::df3[,1],
+                                        y = cpf::df3[,2]))+
+     ggplot2::geom_point(color="blue", size=4, alpha=0.6) +
+     ggplot2::guides(fill = FALSE) +
+     ggplot2::geom_segment( ggplot2::aes(x= cpf::df3[,1], xend = cpf::df3[,1], y=0, yend=cpf::df3[,2]), color="skyblue") +
+     ggplot2::theme_light() +
+     ggplot2::coord_flip()
+   return(plottino)
+ }
+
+##' @param found is a numeric vector
+
+#run this to let everything work: utils::globalVariables(c("df3"))
+
