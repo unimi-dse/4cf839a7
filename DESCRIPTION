@@ -8,10 +8,6 @@ Description: This package contains functions to import and plot the results.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    ggplot2,
-    devtools,
-    utils,
-    rlang
+Imports: ggplot2, devtools, utils, rlang
 Depends: R (>= 3.5.0)
 RoxygenNote: 7.0.2

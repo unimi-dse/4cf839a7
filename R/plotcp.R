@@ -21,7 +21,3 @@
    return(plottino)
  }
 
-##' @param found is a numeric vector
-
-#run this to let everything work: utils::globalVariables(c("df3"))
-
