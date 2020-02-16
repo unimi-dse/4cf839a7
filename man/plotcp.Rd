@@ -9,7 +9,7 @@ plotcp(data, aes_string)
 \arguments{
 \item{data}{is a data.frame}
 
-\item{aes_string}{are the mapping coordinates}
+\item{aes_string}{are x and y mapping coordinates}
 }
 \value{
 a ggplot2 object

@@ -3,11 +3,11 @@ Type: Package
 Title: Cohesion Policy Funds 
 Version: 0.1.0
 Author: Anna Olena Zhabyak
-Maintainer: Anna Olena Zhabyak <zhabyak.annaolena@gmail.com>
-Description: This package contains functions to import and plot the results.
+Maintainer: Anna Olena Zhabyak <annaolena.zhab@unimi.it>
+Description: This package contains functions to plot a dataframe containing the total aamount of funds by country for the EU Cohesion policy 2014/2020. It also contains a shiny app to interact with a basic interface with all the Member states and the total funds by country.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: ggplot2, devtools, utils, rlang
+Imports: ggplot2, devtools, utils, rlang, shiny, shinythemes
 Depends: R (>= 3.5.0)
 RoxygenNote: 7.0.2
