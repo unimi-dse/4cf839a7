@@ -32,7 +32,7 @@ The function `plotcp()` gives a graphical visualization of total amount of funds
  
  ### Shiny App
 
-The function `cpfapp()` runs a very basic interface where the a selection of Member State Graphical User Interface to evaluate the projects from https://github.com/unimi-dse 
+The function `cpfapp()` runs a very basic interface with a selection of European Member state
 
 ```R
 cpfapp()
